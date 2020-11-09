@@ -17,7 +17,6 @@
 
 @end
 
-
 @implementation BulletView
 
 //  初始化弹幕
