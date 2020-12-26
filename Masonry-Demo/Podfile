@@ -1,0 +1,5 @@
+platform :ios,'8.1'
+use_frameworks!
+target 'Masonry-Demo' do
+	pod 'Masonry'
+end
