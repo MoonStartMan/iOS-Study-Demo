@@ -24,3 +24,7 @@ iOS五子棋大战
 ## conversion-UIColor
 
 十六进制颜色转换
+
+## layer设置阴影的两种方式
+
+layer设置阴影的两种方式
