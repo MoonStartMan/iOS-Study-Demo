@@ -28,3 +28,7 @@ iOS五子棋大战
 ## layer设置阴影的两种方式
 
 layer设置阴影的两种方式
+
+## macro-demo
+
+C-宏DEMO
