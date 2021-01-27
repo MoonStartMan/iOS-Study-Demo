@@ -6,8 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "RoundCollectionViewController.h"
-#import "RoundUIcollectionViewFlowLayout.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
-    RoundUIcollectionViewFlowLayout *layout = [[RoundUIcollectionViewFlowLayout alloc] init];
-    RoundCollectionViewController *VC = [[RoundCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    MainViewController *VC = [[MainViewController alloc] init];
     self.window.rootViewController = VC;
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];

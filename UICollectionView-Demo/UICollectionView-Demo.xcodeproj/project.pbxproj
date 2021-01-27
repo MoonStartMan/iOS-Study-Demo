@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3001C01A25C1BCB2002E98F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3001C01925C1BCB2002E98F0 /* MainViewController.m */; };
+		3001C01E25C1BDDB002E98F0 /* ClickBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3001C01D25C1BDDB002E98F0 /* ClickBtn.m */; };
 		30284E6F25B9644F0091D054 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30284E6E25B9644F0091D054 /* AppDelegate.m */; };
 		30284E7A25B964500091D054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30284E7925B964500091D054 /* Assets.xcassets */; };
 		30284E7D25B964500091D054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30284E7B25B964500091D054 /* LaunchScreen.storyboard */; };
@@ -22,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3001C01825C1BCB2002E98F0 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3001C01925C1BCB2002E98F0 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3001C01C25C1BDDB002E98F0 /* ClickBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickBtn.h; sourceTree = "<group>"; };
+		3001C01D25C1BDDB002E98F0 /* ClickBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickBtn.m; sourceTree = "<group>"; };
 		30284E6A25B9644F0091D054 /* UICollectionView-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UICollectionView-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30284E6D25B9644F0091D054 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30284E6E25B9644F0091D054 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +107,10 @@
 				30284E7B25B964500091D054 /* LaunchScreen.storyboard */,
 				30284E7E25B964500091D054 /* Info.plist */,
 				30284E7F25B964500091D054 /* main.m */,
+				3001C01825C1BCB2002E98F0 /* MainViewController.h */,
+				3001C01925C1BCB2002E98F0 /* MainViewController.m */,
+				3001C01C25C1BDDB002E98F0 /* ClickBtn.h */,
+				3001C01D25C1BDDB002E98F0 /* ClickBtn.m */,
 			);
 			path = "UICollectionView-Demo";
 			sourceTree = "<group>";
@@ -237,10 +247,12 @@
 				30284E8B25B969E10091D054 /* LineCollectionViewController.m in Sources */,
 				30F8773B25C1602200877F46 /* CollectionViewController4.m in Sources */,
 				30AF097625BFBF3E0097BBC7 /* RoundCollectionViewController.m in Sources */,
+				3001C01A25C1BCB2002E98F0 /* MainViewController.m in Sources */,
 				30F8773725C15FF900877F46 /* FlowLayout4.m in Sources */,
 				30284E6F25B9644F0091D054 /* AppDelegate.m in Sources */,
 				30AF097125BFA8BC0097BBC7 /* IrregularFlowLayout.m in Sources */,
 				30AF097B25BFBFC20097BBC7 /* RoundUIcollectionViewFlowLayout.m in Sources */,
+				3001C01E25C1BDDB002E98F0 /* ClickBtn.m in Sources */,
 				30AF096D25BFA6030097BBC7 /* IrregularCollectionViewController.m in Sources */,
 				30284E8025B964500091D054 /* main.m in Sources */,
 			);
