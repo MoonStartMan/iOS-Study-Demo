@@ -17,7 +17,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
     MainViewController *VC = [[MainViewController alloc] init];
-    self.window.rootViewController = VC;
+    VC.title = @"主页";
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:VC];
+    self.window.rootViewController = nav;
+    VC = nil;
+    nav = nil;
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
     return YES;

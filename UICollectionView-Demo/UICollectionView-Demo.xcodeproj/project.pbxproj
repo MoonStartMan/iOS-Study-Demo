@@ -14,6 +14,8 @@
 		30284E7D25B964500091D054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30284E7B25B964500091D054 /* LaunchScreen.storyboard */; };
 		30284E8025B964500091D054 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30284E7F25B964500091D054 /* main.m */; };
 		30284E8B25B969E10091D054 /* LineCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30284E8A25B969E10091D054 /* LineCollectionViewController.m */; };
+		30410ADF25C25B12006C19B5 /* FlowLayout5.m in Sources */ = {isa = PBXBuildFile; fileRef = 30410ADE25C25B12006C19B5 /* FlowLayout5.m */; };
+		30410AE325C25B2A006C19B5 /* CollectionViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 30410AE225C25B2A006C19B5 /* CollectionViewController5.m */; };
 		30AF096D25BFA6030097BBC7 /* IrregularCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AF096C25BFA6030097BBC7 /* IrregularCollectionViewController.m */; };
 		30AF097125BFA8BC0097BBC7 /* IrregularFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AF097025BFA8BC0097BBC7 /* IrregularFlowLayout.m */; };
 		30AF097625BFBF3E0097BBC7 /* RoundCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AF097525BFBF3E0097BBC7 /* RoundCollectionViewController.m */; };
@@ -37,6 +39,10 @@
 		30284E7F25B964500091D054 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30284E8925B969E10091D054 /* LineCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineCollectionViewController.h; sourceTree = "<group>"; };
 		30284E8A25B969E10091D054 /* LineCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineCollectionViewController.m; sourceTree = "<group>"; };
+		30410ADD25C25B12006C19B5 /* FlowLayout5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowLayout5.h; sourceTree = "<group>"; };
+		30410ADE25C25B12006C19B5 /* FlowLayout5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowLayout5.m; sourceTree = "<group>"; };
+		30410AE125C25B2A006C19B5 /* CollectionViewController5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController5.h; sourceTree = "<group>"; };
+		30410AE225C25B2A006C19B5 /* CollectionViewController5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController5.m; sourceTree = "<group>"; };
 		30AF096B25BFA6030097BBC7 /* IrregularCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IrregularCollectionViewController.h; sourceTree = "<group>"; };
 		30AF096C25BFA6030097BBC7 /* IrregularCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IrregularCollectionViewController.m; sourceTree = "<group>"; };
 		30AF096F25BFA8BC0097BBC7 /* IrregularFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IrregularFlowLayout.h; sourceTree = "<group>"; };
@@ -103,6 +109,10 @@
 				30F8773625C15FF900877F46 /* FlowLayout4.m */,
 				30F8773925C1602200877F46 /* CollectionViewController4.h */,
 				30F8773A25C1602200877F46 /* CollectionViewController4.m */,
+				30410ADD25C25B12006C19B5 /* FlowLayout5.h */,
+				30410ADE25C25B12006C19B5 /* FlowLayout5.m */,
+				30410AE125C25B2A006C19B5 /* CollectionViewController5.h */,
+				30410AE225C25B2A006C19B5 /* CollectionViewController5.m */,
 				30284E7925B964500091D054 /* Assets.xcassets */,
 				30284E7B25B964500091D054 /* LaunchScreen.storyboard */,
 				30284E7E25B964500091D054 /* Info.plist */,
@@ -247,12 +257,14 @@
 				30284E8B25B969E10091D054 /* LineCollectionViewController.m in Sources */,
 				30F8773B25C1602200877F46 /* CollectionViewController4.m in Sources */,
 				30AF097625BFBF3E0097BBC7 /* RoundCollectionViewController.m in Sources */,
+				30410ADF25C25B12006C19B5 /* FlowLayout5.m in Sources */,
 				3001C01A25C1BCB2002E98F0 /* MainViewController.m in Sources */,
 				30F8773725C15FF900877F46 /* FlowLayout4.m in Sources */,
 				30284E6F25B9644F0091D054 /* AppDelegate.m in Sources */,
 				30AF097125BFA8BC0097BBC7 /* IrregularFlowLayout.m in Sources */,
 				30AF097B25BFBFC20097BBC7 /* RoundUIcollectionViewFlowLayout.m in Sources */,
 				3001C01E25C1BDDB002E98F0 /* ClickBtn.m in Sources */,
+				30410AE325C25B2A006C19B5 /* CollectionViewController5.m in Sources */,
 				30AF096D25BFA6030097BBC7 /* IrregularCollectionViewController.m in Sources */,
 				30284E8025B964500091D054 /* main.m in Sources */,
 			);

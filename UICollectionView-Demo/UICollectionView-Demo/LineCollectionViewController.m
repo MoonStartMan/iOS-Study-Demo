@@ -54,6 +54,7 @@
 
 - (instancetype) initWithCollectionViewLayout:(UICollectionViewFlowLayout *)layout {
     self = [super initWithCollectionViewLayout:layout];
+    self.title = @"DEMO1";
     if (self) {
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         CGFloat width = self.view.frame.size.width/4 - 15;

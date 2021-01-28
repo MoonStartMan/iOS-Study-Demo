@@ -21,7 +21,7 @@
 - (instancetype) initWithCollectionViewLayout:(FlowLayout4 *)layout {
     self = [super initWithCollectionViewLayout:layout];
     if (self) {
-        [super viewDidLoad];
+        self.title = @"DEMO4";
         self.i = 100;
         self.layoutCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 400, 400) collectionViewLayout:layout];
         self.layoutCollectionView.hidden = YES;

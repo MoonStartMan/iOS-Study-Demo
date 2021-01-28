@@ -19,6 +19,7 @@
 - (instancetype) initWithCollectionViewLayout:(RoundUIcollectionViewFlowLayout *)layout {
     self = [super initWithCollectionViewLayout:layout];
     if (self) {
+        self.title = @"DEMO3";
         self.view.backgroundColor = [UIColor whiteColor];
         self.roundCollectionView = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:layout];
         self.roundCollectionView.delegate = self;

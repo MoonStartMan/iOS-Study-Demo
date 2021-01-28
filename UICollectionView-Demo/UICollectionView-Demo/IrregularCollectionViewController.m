@@ -21,6 +21,7 @@
 - (instancetype)initWithCollectionViewLayout:(IrregularFlowLayout *)layout {
     self = [super initWithCollectionViewLayout:layout];
     if (self) {
+        self.title = @"DEMO2";
         self.view.backgroundColor = [UIColor whiteColor];
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         layout.itemCount = 100;
