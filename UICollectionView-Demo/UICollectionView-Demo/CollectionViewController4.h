@@ -9,8 +9,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CollectionViewController4 : UICollectionViewController
+//@interface CollectionViewController4 : UICollectionViewController
+//
+//@end
+
+@class FlowLayout4;
+
+@interface CollectionViewController4 : UIViewController
+
+- (instancetype) initWithCollectionViewLayout:(FlowLayout4 *)layout;
 
 @end
+
 
 NS_ASSUME_NONNULL_END

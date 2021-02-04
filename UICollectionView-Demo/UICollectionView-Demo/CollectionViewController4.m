@@ -12,28 +12,35 @@
 
 @property (nonatomic, strong) UICollectionView* layoutCollectionView;
 @property (nonatomic, assign) NSInteger i;
+@property (nonatomic, strong) FlowLayout4 *layout;
 
 @end
 
 @implementation CollectionViewController4
 
-
 - (instancetype) initWithCollectionViewLayout:(FlowLayout4 *)layout {
-    self = [super initWithCollectionViewLayout:layout];
+//    self = [super initWithCollectionViewLayout:layout];
+    self = [super init];
     if (self) {
         self.title = @"DEMO4";
-        self.i = 100;
-        self.layoutCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 400, 400) collectionViewLayout:layout];
-        self.layoutCollectionView.hidden = YES;
-        self.layoutCollectionView.delegate = self;
-        self.layoutCollectionView.dataSource = self;
-        [self.layoutCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"CellId"];
-        [self.view addSubview:self.layoutCollectionView];
-        self.layoutCollectionView.center = self.view.center;
+        self.layout = layout;
         
-        [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(chageContentOffset) userInfo:nil repeats:YES];
     }
     return self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.i = 100;
+    self.layoutCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, 400, 400) collectionViewLayout:self.layout];
+    self.layoutCollectionView.hidden = NO;
+    self.layoutCollectionView.delegate = self;
+    self.layoutCollectionView.dataSource = self;
+    [self.layoutCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"CellId"];
+    
+    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(chageContentOffset) userInfo:nil repeats:YES];
+    [self.view addSubview:self.layoutCollectionView];
+    self.layoutCollectionView.center = self.view.center;
 }
 
 -(void)chageContentOffset{

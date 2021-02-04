@@ -24,7 +24,7 @@
         self.collectionView5.delegate = self;
         self.collectionView5.dataSource = self;
         [self.collectionView5 registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"CellId"];
-        self.collectionView5.hidden = YES;
+//        self.collectionView5.hidden = YES;
         [self.view addSubview:self.collectionView5];
         self.collectionView5.center = self.view.center;
         self.collectionView5.backgroundColor = [UIColor whiteColor];
