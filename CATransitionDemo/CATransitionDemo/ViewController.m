@@ -18,6 +18,8 @@
 @property (nonatomic, assign) BOOL isImg1;
 @property (nonatomic, assign) NSUInteger index;
 
+@property (nonatomic, strong) UIImageView *imageView;
+
 @end
 
 @implementation ViewController
@@ -56,12 +58,16 @@
     self.img1 = [UIImage imageNamed:@"1.png"];
     self.img2 = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"3" ofType:@"jpg"]];
     
-    [self setUIViewBackgound:self.view name: @"1.png"];
+//    [self setUIViewBackgound:self.view name: @"1.png"];
+//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"1.png"]];
     
+    self.imageView =  [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:self.imageView];
+    self.imageView.image = [UIImage imageNamed:@"1.png"];
     
     self.isImg1 = YES;
     
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateAnimation) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(updateAnimation) userInfo:nil repeats:YES];
 }
 
 - (void)updateAnimation {
@@ -83,12 +89,16 @@
   [TransitionAnimation transitionForView:self.view
                                        type:type
                                     subtype:subtype
-                                   duration:1.0];
+                                   duration:2.0];
   
   if (self.isImg1) {
-    [self setUIViewBackgound:self.view name: @"1.png"];
+//      self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"1.png"]];
+//    [self setUIViewBackgound:self.view name: @"1.png"];
+      self.imageView.image = [UIImage imageNamed:@"1.png"];
   } else {
-    [self setUIViewBackgound:self.view name: @"3.jpg"];
+//      self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"3.jpg"]];
+//    [self setUIViewBackgound:self.view name: @"3.jpg"];
+      self.imageView.image = [UIImage imageNamed:@"3.jpg"];
   }
   
   self.isImg1 = !self.isImg1;
