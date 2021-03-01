@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import <Masonry/Masonry.h>
 
 @interface ViewController ()
 
@@ -28,6 +29,97 @@
     self.redLayer.backgroundColor = [UIColor redColor].CGColor;
     
     [self.view.layer addSublayer: self.redLayer];
+    
+    UIButton *animationBtn1 = [[UIButton alloc] initWithFrame:CGRectZero];
+    animationBtn1.backgroundColor = [UIColor blackColor];
+    [animationBtn1 setTitle:@"按钮1" forState:UIControlStateNormal];
+    [animationBtn1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    animationBtn1.titleLabel.font = [UIFont systemFontOfSize:12];
+    animationBtn1.layer.cornerRadius = 10;
+    [animationBtn1 addTarget:self action:@selector(test01) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *animationBtn2 = [[UIButton alloc] initWithFrame:CGRectZero];
+    animationBtn2.backgroundColor = [UIColor blackColor];
+    [animationBtn2 setTitle:@"按钮2" forState:UIControlStateNormal];
+    [animationBtn2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    animationBtn2.titleLabel.font = [UIFont systemFontOfSize:12];
+    animationBtn2.layer.cornerRadius = 10;
+    [animationBtn2 addTarget:self action:@selector(test02) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *animationBtn3 = [[UIButton alloc] initWithFrame:CGRectZero];
+    animationBtn3.backgroundColor = [UIColor blackColor];
+    [animationBtn3 setTitle:@"按钮3" forState:UIControlStateNormal];
+    [animationBtn3 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    animationBtn3.titleLabel.font = [UIFont systemFontOfSize:12];
+    animationBtn3.layer.cornerRadius = 10;
+    [animationBtn3 addTarget:self action:@selector(test03) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *animationBtn4 = [[UIButton alloc] initWithFrame:CGRectZero];
+    animationBtn4.backgroundColor = [UIColor blackColor];
+    [animationBtn4 setTitle:@"按钮4" forState:UIControlStateNormal];
+    [animationBtn4 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    animationBtn4.titleLabel.font = [UIFont systemFontOfSize:12];
+    animationBtn4.layer.cornerRadius = 10;
+    [animationBtn4 addTarget:self action:@selector(test04) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *animationBtn5 = [[UIButton alloc] initWithFrame:CGRectZero];
+    animationBtn5.backgroundColor = [UIColor blackColor];
+    [animationBtn5 setTitle:@"按钮5" forState:UIControlStateNormal];
+    [animationBtn5 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    animationBtn5.titleLabel.font = [UIFont systemFontOfSize:12];
+    animationBtn5.layer.cornerRadius = 10;
+    [animationBtn5 addTarget:self action:@selector(test05) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *animationBtn6 = [[UIButton alloc] initWithFrame:CGRectZero];
+    animationBtn6.backgroundColor = [UIColor blackColor];
+    [animationBtn6 setTitle:@"按钮6" forState:UIControlStateNormal];
+    [animationBtn6 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    animationBtn6.titleLabel.font = [UIFont systemFontOfSize:12];
+    animationBtn6.layer.cornerRadius = 10;
+    [animationBtn6 addTarget:self action:@selector(test06) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:animationBtn1];
+    [self.view addSubview:animationBtn2];
+    [self.view addSubview:animationBtn3];
+    [self.view addSubview:animationBtn4];
+    [self.view addSubview:animationBtn5];
+    [self.view addSubview:animationBtn6];
+    
+    [animationBtn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view.mas_left).with.offset(20);
+        make.top.equalTo(self.view.mas_top).with.offset(200);
+        make.size.mas_equalTo(CGSizeMake(100, 50));
+    }];
+    
+    [animationBtn2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view.mas_right).with.offset(-120);
+        make.top.mas_equalTo(animationBtn1.mas_top).with.offset(0);
+        make.size.mas_equalTo(CGSizeMake(100, 50));
+    }];
+    
+    [animationBtn3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(animationBtn1.mas_left).with.offset(0);
+        make.top.equalTo(animationBtn1.mas_bottom).with.offset(20);
+        make.size.mas_equalTo(CGSizeMake(100, 50));
+    }];
+    
+    [animationBtn4 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(animationBtn2.mas_right).with.offset(0);
+        make.top.equalTo(animationBtn3.mas_top).with.offset(0);
+        make.size.mas_equalTo(CGSizeMake(100, 50));
+    }];
+    
+    [animationBtn5 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(animationBtn3.mas_right).with.offset(0);
+        make.top.equalTo(animationBtn3.mas_bottom).with.offset(20);
+        make.size.mas_equalTo(CGSizeMake(100, 50));
+    }];
+    
+    [animationBtn6 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(animationBtn4.mas_right).with.offset(0);
+        make.top.equalTo(animationBtn5.mas_top).with.offset(0);
+        make.size.mas_equalTo(CGSizeMake(100, 50));
+    }];
     
 }
 

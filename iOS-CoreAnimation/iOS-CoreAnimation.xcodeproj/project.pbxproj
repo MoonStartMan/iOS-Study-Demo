@@ -12,9 +12,11 @@
 		301E8C0125EA40D4001AD89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301E8C0025EA40D4001AD89E /* Assets.xcassets */; };
 		301E8C0425EA40D4001AD89E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301E8C0225EA40D4001AD89E /* LaunchScreen.storyboard */; };
 		301E8C0725EA40D4001AD89E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 301E8C0625EA40D4001AD89E /* main.m */; };
+		61C644F55285C4A05A4CC279 /* Pods_iOS_CoreAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FB7890A4C067FCC0B41AE6 /* Pods_iOS_CoreAnimation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A66DAEE53B6508622E2740E /* Pods-iOS-CoreAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-CoreAnimation.debug.xcconfig"; path = "Target Support Files/Pods-iOS-CoreAnimation/Pods-iOS-CoreAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 		301E8BF125EA40D0001AD89E /* iOS-CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-CoreAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		301E8BF425EA40D0001AD89E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		301E8BF525EA40D0001AD89E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		301E8C0325EA40D4001AD89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		301E8C0525EA40D4001AD89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301E8C0625EA40D4001AD89E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4FB7890A4C067FCC0B41AE6 /* Pods_iOS_CoreAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_CoreAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F996FC763042A9D91A3B29 /* Pods-iOS-CoreAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-CoreAnimation.release.xcconfig"; path = "Target Support Files/Pods-iOS-CoreAnimation/Pods-iOS-CoreAnimation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C644F55285C4A05A4CC279 /* Pods_iOS_CoreAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				301E8BF325EA40D0001AD89E /* iOS-CoreAnimation */,
 				301E8BF225EA40D0001AD89E /* Products */,
+				D2E1AFEA3BB4BAA8124AC753 /* Pods */,
+				8699F04FB1A35CE1A46490E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +75,24 @@
 			path = "iOS-CoreAnimation";
 			sourceTree = "<group>";
 		};
+		8699F04FB1A35CE1A46490E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4FB7890A4C067FCC0B41AE6 /* Pods_iOS_CoreAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2E1AFEA3BB4BAA8124AC753 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A66DAEE53B6508622E2740E /* Pods-iOS-CoreAnimation.debug.xcconfig */,
+				E8F996FC763042A9D91A3B29 /* Pods-iOS-CoreAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -75,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 301E8C0A25EA40D4001AD89E /* Build configuration list for PBXNativeTarget "iOS-CoreAnimation" */;
 			buildPhases = (
+				DB924FF02E18C9CF04A6987A /* [CP] Check Pods Manifest.lock */,
 				301E8BED25EA40D0001AD89E /* Sources */,
 				301E8BEE25EA40D0001AD89E /* Frameworks */,
 				301E8BEF25EA40D0001AD89E /* Resources */,
+				8730676253FC5FF4BDA7944D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8730676253FC5FF4BDA7944D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-CoreAnimation/Pods-iOS-CoreAnimation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-CoreAnimation/Pods-iOS-CoreAnimation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-CoreAnimation/Pods-iOS-CoreAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB924FF02E18C9CF04A6987A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-CoreAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		301E8BED25EA40D0001AD89E /* Sources */ = {
@@ -270,6 +339,7 @@
 		};
 		301E8C0B25EA40D4001AD89E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A66DAEE53B6508622E2740E /* Pods-iOS-CoreAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -288,6 +358,7 @@
 		};
 		301E8C0C25EA40D4001AD89E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F996FC763042A9D91A3B29 /* Pods-iOS-CoreAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
