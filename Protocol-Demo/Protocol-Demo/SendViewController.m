@@ -87,21 +87,39 @@
         return;
     } else if (self.phoneTextField.text.length != 11) {
         /** 提示最多11位*/
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"警告" message:@"请输入11位数的手机号码" preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alert animated:YES completion:nil];
+        //  控制提示框显示的时间为2s
+        [self performSelector:@selector(dismiss:) withObject:alert afterDelay:2.0f];
+        return;
         if (!isMobilePhone) {
         /** 请输入正确的手机号*/
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"警告" message:@"请输入正确的手机号" preferredStyle:UIAlertControllerStyleAlert];
+            [self presentViewController:alert animated:YES completion:nil];
+            [self performSelector:@selector(dismiss:) withObject:alert afterDelay:2.0f];
             return;
         }
     } else if (!isAge) {
         /** 请输入正确的年龄 */
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"警告" message:@"请输入正确的年龄" preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alert animated:YES completion:nil];
+        [self performSelector:@selector(dismiss:) withObject:alert afterDelay:2.0f];
         return;
     } else if (!isName) {
         /** 请输入正确的名字 */
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"警告" message:@"请输入正确的名字" preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alert animated:YES completion:nil];
+        [self performSelector:@selector(dismiss:) withObject:alert afterDelay:2.0f];
         return;
     } else {
         ReceiveViewController *receiveVC = [[ReceiveViewController alloc] init];
         receiveVC.delegate = (id)self;
         [self.navigationController pushViewController:receiveVC animated:YES];
     }
+}
+
+- (void)dismiss: (UIAlertController *)alert {
+    [alert dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark DataProtocol
