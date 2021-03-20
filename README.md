@@ -64,3 +64,7 @@ NSNotificationCenter-Demo
 ## guide-page-demo
 
 guide-page-demo
+
+## loading-demo
+
+loading-demo
