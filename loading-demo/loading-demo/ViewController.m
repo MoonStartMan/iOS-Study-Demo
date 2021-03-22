@@ -7,19 +7,17 @@
 
 #import "ViewController.h"
 #import "UIView+VLAdditions.h"
+#import "LoadingView.h"
 #import <Masonry/Masonry.h>
+#import "InputTextView.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong) UIBezierPath *trackPath;
+@property (nonatomic, strong) LoadingView *loadingView;
 
-@property (nonatomic, strong) CAShapeLayer *trackLayer;
+@property (nonatomic, strong) InputTextView* startTextView;
 
-@property (nonatomic, strong) UIBezierPath *progressPath;
-
-@property (nonatomic, strong) CAShapeLayer *progressLayer;
-
-@property (nonatomic, strong) CABasicAnimation* pathAnimation;
+@property (nonatomic, strong) InputTextView* endTextView;
 
 @end
 
@@ -27,71 +25,55 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor blackColor];
+    self.loadingView = [[LoadingView alloc] init];
+    [self.view addSubview:self.loadingView];
+    [self.loadingView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top).with.offset(100);
+        make.centerX.equalTo(self.view.mas_centerX).with.offset(0);
+        make.size.mas_equalTo(CGSizeMake(50, 50));
+    }];
+    self.loadingView.hidden = YES;
     
-    self.pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    self.pathAnimation.delegate = (id)self;
+    self.startTextView = [[InputTextView alloc] init];
+    [self.view addSubview:self.startTextView];
+    [self.startTextView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.loadingView.mas_top).with.offset(20);
+        make.centerX.equalTo(self.view.mas_centerX).with.offset(0);
+        make.height.mas_equalTo(30);
+    }];
+    self.startTextView.textLabel.text = @"输入开始百分比区间:(0-1)";
+    
+    self.endTextView = [[InputTextView alloc] init];
+    [self.view addSubview:self.endTextView];
+    [self.endTextView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.startTextView.mas_bottom).with.offset(10);
+        make.centerX.equalTo(self.view.mas_centerX).with.offset(0);
+        make.height.mas_equalTo(30);
+    }];
+    self.endTextView.textLabel.text = @"输入结束百分比区间:(0-1)";
     
     UIButton *downLoadBtn = [[UIButton alloc] init];
     [downLoadBtn addTarget:self action:@selector(startMove) forControlEvents:UIControlEventTouchUpInside];
-    [downLoadBtn setTitle:@"下载" forState:UIControlStateNormal];
-    [downLoadBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [downLoadBtn setTitle:@"开始" forState:UIControlStateNormal];
+    [downLoadBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     downLoadBtn.titleLabel.font = [UIFont systemFontOfSize:14.0 weight:UIFontWeightBold];
     [self.view addSubview:downLoadBtn];
     [downLoadBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top).with.offset(100);
+        make.top.equalTo(self.endTextView.mas_bottom).with.offset(100);
         make.centerX.equalTo(self.view.mas_centerX).with.offset(0);
         make.size.mas_equalTo(CGSizeMake(100, 60));
     }];
-    downLoadBtn.layer.borderColor = [UIColor blackColor].CGColor;
+    downLoadBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     downLoadBtn.layer.borderWidth = 4;
     downLoadBtn.layer.cornerRadius = 10;
     downLoadBtn.layer.masksToBounds = YES;
 }
 
 - (void)startMove {
-    CGRect mybound = CGRectMake(50, 100, 50, 50);
-    [self startProgressAction:mybound];
-    [self updateAnimate:2];
+    CGFloat startVal = self.startTextView.textField.text.floatValue;
+    CGFloat endVal = self.endTextView.textField.text.floatValue;
+    [self.loadingView updatePressPathStartVal:startVal updatePressPathEndVal:endVal];
 }
-
-//画两个圆形
--(void)startProgressAction:(CGRect)mybound
-{
-    //底下的框（灰色）不会动的
-    _trackPath = [UIBezierPath bezierPathWithArcCenter:self.view.center radius:(mybound.size.width - 0.7)/ 2 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
-    
-    _trackLayer = [CAShapeLayer new];
-    [self.view.layer addSublayer:_trackLayer];
-    _trackLayer.fillColor = nil;
-    _trackLayer.strokeColor=[UIColor grayColor].CGColor;
-    _trackLayer.path = _trackPath.CGPath;
-    _trackLayer.lineWidth=4;
-    _trackLayer.frame = mybound;
-    
-    //会动的
-    _progressPath = [UIBezierPath bezierPathWithArcCenter:self.view.center radius:(mybound.size.width - 0.7)/ 2 startAngle:- M_PI_2 endAngle:(M_PI * 2) - M_PI_2 clockwise:YES];
-    _progressLayer = [CAShapeLayer new];
-    [self.view.layer addSublayer:_progressLayer];
-    _progressLayer.fillColor = nil;
-    _progressLayer.strokeColor=[UIColor blackColor].CGColor;
-    _progressLayer.lineCap = kCALineCapRound;
-    _progressLayer.path = _progressPath.CGPath;
-    _progressLayer.lineWidth=4;
-    _progressLayer.frame = mybound;
-    _progressLayer.strokeEnd = 1;
-    _progressLayer.strokeStart = 0;
-}
-
-- (void)updateAnimate:(CGFloat)seconds {
-    self.pathAnimation.duration = seconds;
-    self.pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    self.pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
-    self.pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
-    self.pathAnimation.fillMode = kCAFillModeBoth;
-    self.pathAnimation.removedOnCompletion = NO;
-    [_progressLayer addAnimation:self.pathAnimation forKey:@"strokeEndAnimation"];
-}
-
-
 
 @end

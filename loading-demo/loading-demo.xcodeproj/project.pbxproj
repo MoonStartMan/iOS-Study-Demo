@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302A36C42608683E00AADAC3 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 302A36C32608683E00AADAC3 /* LoadingView.m */; };
+		302A36C82608930400AADAC3 /* InputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 302A36C72608930400AADAC3 /* InputTextView.m */; };
 		30B0CB602604492400DEAF38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0CB5F2604492400DEAF38 /* AppDelegate.m */; };
 		30B0CB662604492400DEAF38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B0CB652604492400DEAF38 /* ViewController.m */; };
 		30B0CB6B2604492500DEAF38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B0CB6A2604492500DEAF38 /* Assets.xcassets */; };
@@ -18,6 +20,10 @@
 
 /* Begin PBXFileReference section */
 		15A921E8CE18C01964DBF21D /* Pods-loading-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loading-demo.release.xcconfig"; path = "Target Support Files/Pods-loading-demo/Pods-loading-demo.release.xcconfig"; sourceTree = "<group>"; };
+		302A36C22608683E00AADAC3 /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		302A36C32608683E00AADAC3 /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		302A36C62608930400AADAC3 /* InputTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputTextView.h; sourceTree = "<group>"; };
+		302A36C72608930400AADAC3 /* InputTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputTextView.m; sourceTree = "<group>"; };
 		30B0CB5B2604492400DEAF38 /* loading-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loading-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B0CB5E2604492400DEAF38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30B0CB5F2604492400DEAF38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +76,10 @@
 				30B0CB5F2604492400DEAF38 /* AppDelegate.m */,
 				30B0CB642604492400DEAF38 /* ViewController.h */,
 				30B0CB652604492400DEAF38 /* ViewController.m */,
+				302A36C22608683E00AADAC3 /* LoadingView.h */,
+				302A36C32608683E00AADAC3 /* LoadingView.m */,
+				302A36C62608930400AADAC3 /* InputTextView.h */,
+				302A36C72608930400AADAC3 /* InputTextView.m */,
 				30B0CB7A260482D400DEAF38 /* UIView+VLAdditions.h */,
 				30B0CB7B260482D400DEAF38 /* UIView+VLAdditions.m */,
 				30B0CB6A2604492500DEAF38 /* Assets.xcassets */,
@@ -210,6 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				30B0CB7C260482D400DEAF38 /* UIView+VLAdditions.m in Sources */,
+				302A36C42608683E00AADAC3 /* LoadingView.m in Sources */,
+				302A36C82608930400AADAC3 /* InputTextView.m in Sources */,
 				30B0CB662604492400DEAF38 /* ViewController.m in Sources */,
 				30B0CB602604492400DEAF38 /* AppDelegate.m in Sources */,
 				30B0CB712604492500DEAF38 /* main.m in Sources */,
