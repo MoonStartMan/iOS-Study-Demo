@@ -68,3 +68,7 @@ guide-page-demo
 ## loading-demo
 
 loading-demo
+
+## leftMenu-demo
+
+leftMenu-demo
