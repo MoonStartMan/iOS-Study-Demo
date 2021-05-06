@@ -56,7 +56,7 @@ typedef NS_ENUM(NSInteger,DrawerType) {
  *  @param leftVC  左vc
  *  @param mainVC  中间vc
  *
- *  @return WZXDrawerViewController对象
+ *  @return DrawerViewController对象
  */
 + (instancetype)drawerViewControllerWithLeftViewController:(UIViewController *)leftVC mainViewController:(UIViewController *)mainVC;
 /**
@@ -67,7 +67,7 @@ typedef NS_ENUM(NSInteger,DrawerType) {
  *
  *  @return WZXDrawerViewController对象
  */
-+ (DrawerViewController *)lsy_drawerViewControllerWithMainViewController:(UIViewController *)mainVC;
++ (DrawerViewController *)drawerViewControllerWithMainViewController:(UIViewController *)mainVC;
 
 - (instancetype)initWithLeftViewController:(UIViewController *)leftVC mainViewController:(UIViewController *)mainVC;
 

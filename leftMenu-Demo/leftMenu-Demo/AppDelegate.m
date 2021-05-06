@@ -18,16 +18,14 @@
 #define SCREEN_HEIGHT ([[UIScreen mainScreen]bounds].size.height)
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    MainViewController * mainHomeVC = [MainViewController drawerViewControllerWithLeftViewController:[[LeftViewController alloc] init] mainViewController:[[MainViewController alloc] init]];
+    MainViewController * mainHomeVC = [MainViewController drawerViewControllerWithLeftViewController:[[LeftViewController alloc] init] mainViewController:[[ViewController alloc] init]];
     mainHomeVC.leftViewWidth = SCREEN_WIDTH*0.75;
     self.window.rootViewController = mainHomeVC;
     return YES;
 }
-
 
 @end

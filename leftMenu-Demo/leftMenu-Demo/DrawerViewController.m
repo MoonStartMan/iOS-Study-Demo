@@ -104,9 +104,9 @@ typedef NS_ENUM(NSInteger, DrawerShowState) {
     if (_drawerType == DrawerTypePlane) {
         CGFloat realDuration = _duration * ABS(_leftVC.view.frame.origin.x / -_leftViewWidth);
         [UIView animateWithDuration:animated?realDuration:0 animations:^{
-            CGRect leftFrame    = _leftVC.view.frame;
+            CGRect leftFrame    = self->_leftVC.view.frame;
             leftFrame.origin.x  = 0;
-            _leftVC.view.frame  = leftFrame;
+            self->_leftVC.view.frame  = leftFrame;
         } completion:^(BOOL finished) {
             self.coverView.hidden = NO;
         }];
@@ -124,9 +124,9 @@ typedef NS_ENUM(NSInteger, DrawerShowState) {
     if (_drawerType == DrawerTypePlane) {
         CGFloat realDuration = _duration * ABS((_leftViewWidth + _leftVC.view.frame.origin.x) / _leftViewWidth);
         [UIView animateWithDuration:animated?realDuration:0 animations:^{
-            CGRect leftFrame    = _leftVC.view.frame;
-            leftFrame.origin.x  = -_leftViewWidth;
-            _leftVC.view.frame  = leftFrame;
+            CGRect leftFrame    = self->_leftVC.view.frame;
+            leftFrame.origin.x  = -self->_leftViewWidth;
+            self->_leftVC.view.frame  = leftFrame;
         } completion:^(BOOL finished) {
             self.coverView.hidden = YES;
         }];
