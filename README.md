@@ -72,3 +72,8 @@ loading-demo
 ## leftMenu-demo
 
 leftMenu-demo
+
+
+## carousel-Demo
+
+carousel-Demo
