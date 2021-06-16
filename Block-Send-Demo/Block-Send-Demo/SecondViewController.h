@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondViewController : UIViewController
 
-//  给Block重新定义一个名字cewrewgr
+//  给Block重新定义一个名字
 typedef void(^ReturnTextBlock)(NSString *text);
 
 @property (nonatomic, strong) UILabel *titleLabel;
