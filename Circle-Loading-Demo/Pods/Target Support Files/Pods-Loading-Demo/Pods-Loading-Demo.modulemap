@@ -1,0 +1,6 @@
+framework module Pods_Loading_Demo {
+  umbrella header "Pods-Loading-Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -97,3 +97,7 @@ iOS拖拽Demo
 ## Drag-Progress-Demo
 
 拖拽圆环进度条
+
+## Circle-Loading-Demo
+
+圆环加载Demo
