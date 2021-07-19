@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *recommendLabel;
 //  滤镜描述相关Model
 @property (nonatomic, strong) DescriptionModel *model;
+//  更新滤镜描述信息
+- (void)updateDescription;
 
 @end
 

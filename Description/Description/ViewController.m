@@ -28,6 +28,9 @@
         make.left.equalTo(self.view.mas_left).with.offset(0);
         make.size.mas_equalTo(CGSizeMake(self.view.frame.size.width, 200));
     }];
+    self.descriptView.alpha = 0;
+    
+    [self.descriptView updateDescription];
     
     // Do any additional setup after loading the view.
 }

@@ -91,6 +91,24 @@ static CGFloat leftMargin = 20.0f;
     return self;
 }
 
+- (void)updateDescription {
+    self.titleLabel.text = self.model.titleText;
+    self.styleLabel.text = self.model.styleText;
+    self.tonalLabel.text = self.model.tonalText;
+    self.recommendLabel.text = self.model.recommendText;
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        self.center = CGPointMake(20, 0);
+        self.alpha = 1;
+    }completion:^(BOOL finished) {
+        if (finished) {
+            [UIView animateWithDuration:0.3 delay:1.0 options:UIViewAnimationOptionCurveLinear animations:^{
+                self.alpha = 0;
+            } completion:nil];
+        }
+    }];
+}
+
 @end
 
 
