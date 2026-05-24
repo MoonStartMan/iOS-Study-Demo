@@ -1,3 +1,10 @@
+//
+//  AppDelegate.m
+//  Gobang
+//
+//  Created by MoonStartMan on 2024.
+//  应用程序委托，处理应用生命周期事件
+//
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
