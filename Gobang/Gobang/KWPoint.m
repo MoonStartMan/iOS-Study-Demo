@@ -1,3 +1,10 @@
+//
+//  KWPoint.m
+//  Gobang
+//
+//  Created by MoonStartMan on 2024.
+//  五子棋棋盘点位模型
+//
 #import "KWPoint.h"
 
 @implementation KWPoint
