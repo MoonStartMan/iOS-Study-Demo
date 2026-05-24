@@ -1,3 +1,10 @@
+//
+//  ViewController.m
+//  Gobang
+//
+//  Created by MoonStartMan on 2024.
+//  主视图控制器，管理主界面逻辑
+//
 #import "ViewController.h"
 #import "KWGobangView.h"
 
